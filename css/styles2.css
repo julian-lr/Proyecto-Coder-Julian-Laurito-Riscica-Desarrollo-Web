@@ -1,0 +1,44 @@
+/* ====RESET==== */
+.gallery-container * {
+    color:#ffffff;
+    background-color:black;
+    border: 2px solid crimson;
+    }
+    
+
+    /* ====GRIDS==== */
+.gallery-container {
+    display: grid;
+    grid-template-columns: 300px auto 200px;
+    grid-template-rows: 15vh repeat(2,30vh) 15vh;
+    gap: 20px;
+    grid-template-areas: 
+    "nav header header"
+    "nav noticias aside"
+    "nav about-us aside"
+    "nav footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.noticias {
+    grid-area: noticias;
+}
+
+aside {
+    grid-area: aside;
+}
+
+.about-us {
+    grid-area: about-us;
+}
+
+footer {
+    grid-area: footer;
+}
