@@ -1,245 +1,209 @@
 /* ====RESET==== */
 * {
-margin: 0;
-padding: 0;
-color:white;
-font-family: 'PT Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-background-color:#181818;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "PT Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: #181818;
+  box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-ul,ol {
-    list-style: none;
+ul,
+ol {
+  list-style: none;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
-
 
 /* ====HEADER==== */
-header {
-    padding: 0.5rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+
+.navbar {
+  padding: 0;
 }
 
-header ul {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    flex-wrap: wrap;
-    
+/* ====ESCONDER UL EN MOBILE==== */
+.navbar .container-fluid .nav-div-mobhide {
+  display: none;
 }
 
-header ul li a img {
-    width: 45px;
+/* ====AJUSTE DE MARGENES DE LOS LINKS==== */
+.navbar .container-fluid .navbar-brand {
+  margin: 5px;
 }
 
+/* ====FIJADO DE TAMAÑO DE LOGO EN NAVBAR==== */
+.navbar .container-fluid .navbar-brand .nav__img {
+  width: 45px;
+}
+
+/* ====BORDE SOLIDO PARA EL MENU COMO DIVISOR==== */
+.navbar .container-fluid .collapse .navbar-nav .ul-li-borderbottom {
+  border-bottom: 1px solid #585858;
+}
 
 /* ===PAG DE INDEX=== */
+
+/* ===ESCONDER VIDEO EN MOBILE=== */
 .video-holder video {
-    width: 100%;
+  display: none;
 }
 
+/* ===BACKGROUND IMAGE PARA MOBILE=== */
+.headline-holder div.charlytest {
+  width: 100%;
+  height: 75vh;
+  text-align: center;
+  background-image: url(../img/cg-mob.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+}
+
+/* ===AJUSTE HEADLINE 1 PARA MOBILE=== */
+.headline-holder div.charlytest h1 {
+  top: 50%;
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  font-family: Teko, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: black;
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 3.5rem;
+}
+
+/* ===AJUSTE HEADLINE 2 PARA MOBILE=== */
+.headline-holder div.charlytest h2 {
+  top: 65%;
+  position: relative;
+  background-color: transparent;
+  font-family: Teko, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  font-size: 1.5rem;
+}
 
 /* ===FOOTER=== */
-
-footer  {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 20px;
+/* ===ELEMENTO FOOTER=== */
+footer {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
-footer section {
-    padding: 0 20px;
+/* ===SECTION FOOTERS=== */
+.footer {
+  padding: 0 20px;
 }
 
-.middlefooter {
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+/* ===SECTION FOOTERS UL - SACAR PADDING AGREGADO POR BOOTSTRAP=== */
+.footer ul {
+  padding-left: 0;
 }
 
-.rightfooter input {
-    width: 200px;
-}
-
-.footer button {
-    padding: 100px;
-}
-
-.streamingrrss {
-    text-align: center;
-}
-
-div.streamingrrss li {
-    width: 20px;
-    display: inline-block;
-}
-
-
-/* ===PAG DE MUSICA=== */ 
-.flex-container {
-    display: flex;
-    justify-content: center;
-    flex-flow: wrap row;
-}
-
-.flex-container .caja {
-    width: 250px;
-    height: 250px;
-    text-align: center;
-    margin: 1rem;
-}
-
-.flex-container .caja img {
-    width: 100%;
-}
-
-/* ===PAG DE GALERIA=== */ 
-
-section.gallery-container {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    margin: 25px 0;
-}
-
-.gallery-container .caja {
-    max-width: 300px;
-    margin: 0;
-}
-
-.gallery-container div img {
-    width: 100%;
-    max-height: 100%;;
-}
-
-
-/* ===PAG DE CONTACTO=== */ 
-
-.form {
-    display: flex;
-    align-items: center;
-    flex-flow: column nowrap;
-}
-
-.form h1 {
-    margin-top: 20px;
-    margin-bottom: 15px;
-}
-
-section form input,textarea {
-    width: 300px;
-}
-
-.form-button {
-    width: 150px;
-    border: 1px solid white;
-    border-radius: 10px;
-    font-size: 1rem;
-    padding: 0.25rem;
-    margin: 1rem 0 2rem 0;
-}
-
-.checkbox {
-    width: 15px;
-}
-
-
-/* ===PAG DE CONCIERTOS=== */ 
-
-.map-container {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    margin: 25px 0;
-    font-size: 0.85rem;
-    
-}
-
-.head-conc , .head-conc h1 , .head-conc h2 , .head-conc a , .head-conc p {
-    background-color: #3b3b3b;
-}
-
-.head-conc h1 {
-    font-size: 1.5rem;
-}
-
-.head-conc {
-    padding: 10px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.mcajas-1 {
-    width:300px;
-    background-color: #3b3b3b;
-    margin: 5px;
-    padding: 5px;
-    border-top: 1px solid black;
-}
-
-.mfecha {
-    background-color: #3b3b3b;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.mfecha a {
-    font-size: 1rem;
-    background-color: #df6400;
-    padding: 0.25rem 0.5rem;
-    border-radius: 30px;
-    text-transform: uppercase;
-    align-content:right;
+  /* ===BOLD PARA LOS TITULOS DE FOOTER=== */
+  .footer h3 {
     font-weight: bold;
+  }
 
+/* ===RIGHT FOOTER=== */
+/* ===RIGHT FOOTER - FORM=== */
+.rightfooter-form .form-input-restyle {
+  width: 200px;
+  border: 1px solid white
 }
 
-.mcajas iframe {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+/* ===RIGHT FOOTER - BUTTON=== */
+.rightfooter-form button {
+  padding: 0 5px;
+  border: 1px solid white;
 }
 
-
-/* ===PAG DE BIOGRAFIA=== */ 
-
-.biomain {
-    height:80vh;
-    background-image: url(../img/biocg.jpg);
-    background-size: cover;
-    margin-bottom: 30px;
-    background-repeat: no-repeat;
+/* ===RIGHT FOOTER - COPYRIGHT AJUSTE=== */
+.rightfooter .copy-div {
+  text-align: center;
+  padding-top: 10px;
 }
 
-.bio-maincontent {
-    margin: 0 20%;
-    text-align: center;
-    background-color:transparent;
+/* ===RIGHT FOOTER - REDES SOCIALES=== */
+.rightfooter .rrss-div {
+  text-align: center;
+  padding-top: 20px;
 }
 
-.bio-maincontent h1 {
-    background-color:transparent;
-    padding-top: 15px;
- }
-
-.bio-p1 {
-    text-align: left;
-    padding-top: 20px;
+.rightfooter .rrss-div .rrss-ul {
+  text-align: center;
+  display: inline-block;
 }
 
-.bio-maincontent p {
-    background-color: transparent;
+.rightfooter .rrss-div .rrss-ul .ul-li-adjust {
+  display: inline-block;
+  width: 20px;
+}
+
+@media (min-width: 1200px) {
+  /* ====ESCONDER UL EN DESKTOP==== */
+  .navbar .container-fluid .collapse .navbar-nav .nav-div-deskhide {
+    display: none;
+  }
+
+   /* ====ESPACIO ENTRE LOS LINKS DEL NAV==== */
+   .navbar .container-fluid .collapse .navbar-nav .nav-item {
+    padding: 0 10px;
+   }
+
+  /* ===INDEX=== */
+  /* ===MOSTRAR VIDEO EN MOBILE=== */
+  .video-holder video {
+    display: inline-block;
+  }
+
+  /* ===ESCONDER IMAGEN Y HEADLINES EN MOBILE=== */
+  .headline-holder {
+    display: none;
+  }
+  /* ====REMOVER BORDE SOLIDO PARA EL MENU==== */
+  .navbar .container-fluid .collapse .navbar-nav .ul-li-borderbottom {
+    border-bottom: none;
+  }
+
+  /* ===FOOTER=== */
+  /* ===ELEMENTO FOOTER=== */
+  footer {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* ===MIDDLE FOOTER=== */
+  /* ===BORDE PARA EL FOOTER DEL MEDIO=== */
+  .middlefooter {
+    border-left: 1px solid #585858;
+    border-right: 1px solid #585858;
+  }
+
+  /* ===RIGHT FOOTER=== */
+  /* ===RIGHT FOOTER - FORM=== */
+  .rightfooter-form .form-input-restyle {
+    width: 380px;
+  }
+
+  /* ===RIGHT FOOTER - ESCONDER BR DEL H3=== */
+  .br-hidden-desk {
+    display: none;
+  }
 }

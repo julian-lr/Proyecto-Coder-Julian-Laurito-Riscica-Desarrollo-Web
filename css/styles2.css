@@ -42,3 +42,163 @@ aside {
 footer {
     grid-area: footer;
 }
+
+
+/* ===PAG DE MUSICA=== */ 
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap row;
+}
+
+.flex-container .caja {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: 1rem;
+}
+
+.flex-container .caja img {
+    width: 100%;
+}
+
+/* ===PAG DE GALERIA=== */ 
+
+section.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 25px 0;
+}
+
+.gallery-container .caja {
+    max-width: 300px;
+    margin: 0;
+}
+
+.gallery-container div img {
+    width: 100%;
+    max-height: 100%;;
+}
+
+
+/* ===PAG DE CONTACTO=== */ 
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.form h1 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+section form input,textarea {
+    width: 300px;
+}
+
+.form-button {
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0.25rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.checkbox {
+    width: 15px;
+}
+
+
+/* ===PAG DE CONCIERTOS=== */ 
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 25px 0;
+    font-size: 0.85rem;
+    
+}
+
+.head-conc , .head-conc h1 , .head-conc h2 , .head-conc a , .head-conc p {
+    background-color: #3b3b3b;
+}
+
+.head-conc h1 {
+    font-size: 1.5rem;
+}
+
+.head-conc {
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.mcajas-1 {
+    width:300px;
+    background-color: #3b3b3b;
+    margin: 5px;
+    padding: 5px;
+    border-top: 1px solid black;
+}
+
+.mfecha {
+    background-color: #3b3b3b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mfecha a {
+    font-size: 1rem;
+    background-color: #df6400;
+    padding: 0.25rem 0.5rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    align-content:right;
+    font-weight: bold;
+
+}
+
+.mcajas iframe {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/* ===PAG DE BIOGRAFIA=== */ 
+
+.biomain {
+    height:80vh;
+    background-image: url(../img/biocg.jpg);
+    background-size: cover;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+}
+
+.bio-maincontent {
+    margin: 0 20%;
+    text-align: center;
+    background-color:transparent;
+}
+
+.bio-maincontent h1 {
+    background-color:transparent;
+    padding-top: 15px;
+ }
+
+.bio-p1 {
+    text-align: left;
+    padding-top: 20px;
+}
+
+.bio-maincontent p {
+    background-color: transparent;
+}
