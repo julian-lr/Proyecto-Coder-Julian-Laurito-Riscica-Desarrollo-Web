@@ -41,7 +41,7 @@ img {
 }
 
 /* ====FIJADO DE TAMAÑO DE LOGO EN NAVBAR==== */
-.navbar .container-fluid .navbar-brand .nav__img {
+.navbar .container-fluid .navbar-brand .nav-img {
   width: 45px;
 }
 
