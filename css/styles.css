@@ -152,9 +152,19 @@ footer {
 .rightfooter .rrss-div .rrss-ul .ul-li-adjust {
   display: inline-block;
   width: 20px;
+  margin: 0 5px;
 }
 
-@media (min-width: 1200px) {
+/* ===GALERÍA=== */
+/* ===AJUSTE DE HEALINE EN GALERIA=== */
+.headline-container .headline-bio {
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* ===PARA DESKTOP=== */
+@media (min-width: 990px) {
   /* ====ESCONDER UL EN DESKTOP==== */
   .navbar .container-fluid .collapse .navbar-nav .nav-div-deskhide {
     display: none;
@@ -165,19 +175,21 @@ footer {
     padding: 0 10px;
    }
 
-  /* ===INDEX=== */
+  /* ====REMOVER BORDE SOLIDO PARA EL MENU==== */
+  .navbar .container-fluid .collapse .navbar-nav .ul-li-borderbottom {
+    border-bottom: none;
+  }
+
+/* ===INDEX=== */
   /* ===MOSTRAR VIDEO EN MOBILE=== */
   .video-holder video {
     display: inline-block;
+    max-width:100%;
   }
 
   /* ===ESCONDER IMAGEN Y HEADLINES EN MOBILE=== */
   .headline-holder {
     display: none;
-  }
-  /* ====REMOVER BORDE SOLIDO PARA EL MENU==== */
-  .navbar .container-fluid .collapse .navbar-nav .ul-li-borderbottom {
-    border-bottom: none;
   }
 
   /* ===FOOTER=== */
