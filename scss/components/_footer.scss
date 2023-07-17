@@ -1,0 +1,87 @@
+footer {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+/* ===SECTION FOOTERS=== */
+.footer {
+  padding: 0 20px;
+}
+
+/* ===SECTION FOOTERS UL - SACAR PADDING AGREGADO POR BOOTSTRAP=== */
+.footer ul {
+  padding-left: 0;
+}
+
+  /* ===BOLD PARA LOS TITULOS DE FOOTER=== */
+  .footer h3 {
+    font-weight: bold;
+  }
+
+/* ===RIGHT FOOTER=== */
+/* ===RIGHT FOOTER - FORM=== */
+.rightfooter-form .form-input-restyle {
+  width: 200px;
+  border: 1px solid white
+}
+
+/* ===RIGHT FOOTER - BUTTON=== */
+.rightfooter-form button {
+  padding: 0 5px;
+  border: 1px solid white;
+}
+
+/* ===RIGHT FOOTER - COPYRIGHT AJUSTE=== */
+.rightfooter .copy-div {
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* ===RIGHT FOOTER - REDES SOCIALES=== */
+.rightfooter .rrss-div {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.rightfooter .rrss-div .rrss-ul {
+  text-align: center;
+  display: inline-block;
+}
+
+.rightfooter .rrss-div .rrss-ul .ul-li-adjust {
+  display: inline-block;
+  width: 20px;
+  margin: 0 5px;
+}
+
+@media (min-width: 990px) {
+  /* ===FOOTER=== */
+  /* ===ELEMENTO FOOTER=== */
+  footer {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* ===MIDDLE FOOTER=== */
+  /* ===BORDE PARA EL FOOTER DEL MEDIO=== */
+  .middlefooter {
+    border-left: 1px solid #585858;
+    border-right: 1px solid #585858;
+  }
+
+  /* ===RIGHT FOOTER=== */
+  /* ===RIGHT FOOTER - FORM=== */
+  .rightfooter-form .form-input-restyle {
+    width: 380px;
+  }
+
+  /* ===RIGHT FOOTER - ESCONDER BR DEL H3=== */
+  .br-hidden-desk {
+    display: none;
+  }
+}

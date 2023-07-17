@@ -1,0 +1,56 @@
+/* ===ESCONDER VIDEO EN MOBILE=== */
+.video-holder video {
+  display: none;
+}
+
+/* ===BACKGROUND IMAGE PARA MOBILE=== */
+.headline-holder div.charlytest {
+  width: 100%;
+  height: 75vh;
+  text-align: center;
+  background-image: url(../img/cg-mob.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+}
+
+/* ===AJUSTE HEADLINE 1 PARA MOBILE=== */
+.headline-holder div.charlytest h1 {
+  top: 50%;
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  font-family: Teko, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: black;
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 3.5rem;
+}
+
+/* ===AJUSTE HEADLINE 2 PARA MOBILE=== */
+.headline-holder div.charlytest h2 {
+  top: 65%;
+  position: relative;
+  background-color: transparent;
+  font-family: Teko, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* ===DESKTOP VIEWPORT=== */
+@media (min-width: 990px) {
+  /* ===INDEX=== */
+  /* ===MOSTRAR VIDEO EN MOBILE=== */
+  .video-holder video {
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  /* ===ESCONDER IMAGEN Y HEADLINES EN MOBILE=== */
+  .headline-holder {
+    display: none;
+  }
+}

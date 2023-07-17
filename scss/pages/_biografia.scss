@@ -1,0 +1,36 @@
+/* ===BIOGRAFIA=== */
+/* ===ALINEAR AL CENTRO=== */
+.biografia-container {
+  text-align: center;
+  padding: 10px 15px 5px 15px;
+}
+
+/* ===ALINEAR COL DERECHA A LA IZQUIERDA=== */
+.biografia-container .row .rightcol {
+  text-align: left;
+  padding-top: 20px;
+}
+
+/* ===ALINEAR H1 AL CENTRO=== */
+.biografia-container .row .col-sm-6 h1 {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+/* ===ESCONDER H2 EN MOB=== */
+.biografia-container .row .col-sm-6 h2 {
+  display: none;
+}
+
+/* ===DESKTOP VIEWPORT=== */
+@media (min-width: 990px) {
+  /* ===BIOGRAFIA=== */
+  /* ===MOSTRAR H2 EN DESKTOP=== */
+  .biografia-container .row .col-sm-6 h2 {
+    display: inline-block;
+  }
+  /* ===ESCONDER H1 EN DESKTOP=== */
+  .biografia-container .row .col-sm-6 h1 {
+    display: none;
+  }
+}
