@@ -3,38 +3,37 @@
 }
 
 /* ====ESCONDER UL EN MOBILE==== */
-.navbar .container-fluid .nav-div-mobhide {
+.nav__div--mobhide {
   display: none;
 }
 
-/* ====AJUSTE DE MARGENES DE LOS LINKS==== */
-.navbar .container-fluid .navbar-brand {
+/* ====AJUSTE DE MARGENES EN EL LINK A Y FIJADO DE TAMAÑO DEL LOGO==== */
+.imglink {
   margin: 5px;
-}
 
-/* ====FIJADO DE TAMAÑO DE LOGO EN NAVBAR==== */
-.navbar .container-fluid .navbar-brand .nav-img {
-  width: 45px;
+  &__img {
+    width: 45px;
+  }
 }
 
 /* ====BORDE SOLIDO PARA EL MENU COMO DIVISOR==== */
-.navbar .container-fluid .collapse .navbar-nav .ul-li-borderbottom {
+.nav__li--borderbot {
   border-bottom: 1px solid #585858;
 }
 
 @media (min-width: 990px) {
   /* ====ESCONDER UL EN DESKTOP==== */
-  .navbar .container-fluid .collapse .navbar-nav .nav-div-deskhide {
+  .nav__div--deskhide {
     display: none;
   }
 
   /* ====ESPACIO ENTRE LOS LINKS DEL NAV==== */
-  .navbar .container-fluid .collapse .navbar-nav .nav-item {
+  .nav-item {
     padding: 0 10px;
   }
 
   /* ====REMOVER BORDE SOLIDO PARA EL MENU==== */
-  .navbar .container-fluid .collapse .navbar-nav .ul-li-borderbottom {
+  .nav__li--borderbot {
     border-bottom: none;
   }
 }

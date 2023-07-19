@@ -1,10 +1,17 @@
 /* ===MUSICA=== */
+/* ===AJUSTE Y CENTRADO HEADLINE=== */
+.musica__headline {
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+}
+
 /* ===ALINEAR AL CENTRO=== */
 .album {
   text-align: center;
 }
 
 /* ===AJUSTE DE PADDING EN ALBUMS=== */
-.album .row div {
+.row__div {
   padding-bottom: 24px;
 }

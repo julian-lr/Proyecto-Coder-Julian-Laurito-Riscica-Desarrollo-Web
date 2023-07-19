@@ -27,36 +27,34 @@ img {
 }
 
 /* ====ESCONDER UL EN MOBILE==== */
-.navbar .container-fluid .nav-div-mobhide {
+.nav__div--mobhide {
   display: none;
 }
 
-/* ====AJUSTE DE MARGENES DE LOS LINKS==== */
-.navbar .container-fluid .navbar-brand {
+/* ====AJUSTE DE MARGENES EN EL LINK A Y FIJADO DE TAMAÑO DEL LOGO==== */
+.imglink {
   margin: 5px;
 }
-
-/* ====FIJADO DE TAMAÑO DE LOGO EN NAVBAR==== */
-.navbar .container-fluid .navbar-brand .nav-img {
+.imglink__img {
   width: 45px;
 }
 
 /* ====BORDE SOLIDO PARA EL MENU COMO DIVISOR==== */
-.navbar .container-fluid .collapse .navbar-nav .ul-li-borderbottom {
+.nav__li--borderbot {
   border-bottom: 1px solid #585858;
 }
 
 @media (min-width: 990px) {
   /* ====ESCONDER UL EN DESKTOP==== */
-  .navbar .container-fluid .collapse .navbar-nav .nav-div-deskhide {
+  .nav__div--deskhide {
     display: none;
   }
   /* ====ESPACIO ENTRE LOS LINKS DEL NAV==== */
-  .navbar .container-fluid .collapse .navbar-nav .nav-item {
+  .nav-item {
     padding: 0 10px;
   }
   /* ====REMOVER BORDE SOLIDO PARA EL MENU==== */
-  .navbar .container-fluid .collapse .navbar-nav .ul-li-borderbottom {
+  .nav__li--borderbot {
     border-bottom: none;
   }
 }
@@ -66,60 +64,56 @@ footer {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 20px;
+  /* ===SECTION FOOTERS=== */
 }
-
-/* ===SECTION FOOTERS=== */
-.footer {
+footer .footer {
   padding: 0 20px;
+  /* ===SECTION FOOTERS UL - SACAR PADDING AGREGADO POR BOOTSTRAP=== */
+  /* ===BOLD PARA LOS TITULOS DE FOOTER=== */
 }
-
-/* ===SECTION FOOTERS UL - SACAR PADDING AGREGADO POR BOOTSTRAP=== */
-.footer ul {
+footer .footer__ul {
   padding-left: 0;
 }
-
-/* ===BOLD PARA LOS TITULOS DE FOOTER=== */
-.footer h3 {
+footer .footer__foothead {
   font-weight: bold;
 }
 
 /* ===RIGHT FOOTER=== */
 /* ===RIGHT FOOTER - FORM=== */
-.rightfooter-form .form-input-restyle {
+.rform__input--restyle {
   width: 200px;
   border: 1px solid white;
 }
 
 /* ===RIGHT FOOTER - BUTTON=== */
-.rightfooter-form button {
+.rform__button--restyle {
   padding: 0 5px;
   border: 1px solid white;
 }
 
 /* ===RIGHT FOOTER - COPYRIGHT AJUSTE=== */
-.rightfooter .copy-div {
+.copy-div {
   text-align: center;
   padding-top: 10px;
 }
 
 /* ===RIGHT FOOTER - REDES SOCIALES=== */
-.rightfooter .rrss-div {
+.rrss {
   text-align: center;
   padding-top: 20px;
 }
-
-.rightfooter .rrss-div .rrss-ul {
+.rrss__ul {
   text-align: center;
   display: inline-block;
+  padding: 0;
 }
-
-.rightfooter .rrss-div .rrss-ul .ul-li-adjust {
+.rrss__ul .rrssul__li--adjust {
   display: inline-block;
   width: 20px;
   margin: 0 5px;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 810px) {
   /* ===FOOTER=== */
   /* ===ELEMENTO FOOTER=== */
   footer {
@@ -130,27 +124,34 @@ footer {
   }
   /* ===MIDDLE FOOTER=== */
   /* ===BORDE PARA EL FOOTER DEL MEDIO=== */
-  .middlefooter {
+  .footer__middlefooter {
     border-left: 1px solid #585858;
     border-right: 1px solid #585858;
   }
   /* ===RIGHT FOOTER=== */
   /* ===RIGHT FOOTER - FORM=== */
-  .rightfooter-form .form-input-restyle {
-    width: 380px;
+  .rform__input--restyle {
+    width: 255px;
   }
   /* ===RIGHT FOOTER - ESCONDER BR DEL H3=== */
-  .br-hidden-desk {
+  .foothead__br--hidedesk {
     display: none;
   }
 }
+@media (min-width: 990px) {
+  /* ===RIGHT FOOTER=== */
+  /* ===RIGHT FOOTER - FORM=== */
+  .rform__input--restyle {
+    width: 380px;
+  }
+}
 /* ===ESCONDER VIDEO EN MOBILE=== */
-.video-holder video {
+.vidholder {
   display: none;
 }
 
-/* ===BACKGROUND IMAGE PARA MOBILE=== */
-.headline-holder div.charlytest {
+/* ===BACKGROUND IMAGE + AJUSTES DE HEADLINE 1 Y HEADLINE 2 PARA MOBILE=== */
+.headline {
   width: 100%;
   height: 75vh;
   text-align: center;
@@ -160,9 +161,7 @@ footer {
   background-size: cover;
   background-color: transparent;
 }
-
-/* ===AJUSTE HEADLINE 1 PARA MOBILE=== */
-.headline-holder div.charlytest h1 {
+.headline__maintitle {
   top: 50%;
   position: relative;
   display: inline-block;
@@ -173,9 +172,7 @@ footer {
   font-weight: bold;
   line-height: 3.5rem;
 }
-
-/* ===AJUSTE HEADLINE 2 PARA MOBILE=== */
-.headline-holder div.charlytest h2 {
+.headline__subtitle {
   top: 65%;
   position: relative;
   background-color: transparent;
@@ -184,22 +181,38 @@ footer {
   font-size: 1.5rem;
 }
 
-/* ===DESKTOP VIEWPORT=== */
+/* ===INDEX DESKTOP VIEWPORT=== */
 @media (min-width: 990px) {
-  /* ===INDEX=== */
   /* ===MOSTRAR VIDEO EN MOBILE=== */
-  .video-holder video {
+  .vidholder {
     display: inline-block;
+  }
+  .vidholder video {
     max-width: 100%;
   }
-  /* ===ESCONDER IMAGEN Y HEADLINES EN MOBILE=== */
-  .headline-holder {
+  /* ===ESCONDER IMAGEN Y HEADLINE 2 EN MOBILE=== */
+  .headline {
+    background-image: none;
+    width: auto;
+    height: auto;
+  }
+  .headline__maintitle {
+    border: 0 none;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .headline__subtitle {
     display: none;
   }
 }
 /* ===CONCIERTOS=== */
 /* ===CONTENEDOR MAPA+LISTA=== */
-.map-container {
+.maincontainer {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -208,45 +221,37 @@ footer {
 }
 
 /* ===MODIFICAR BACKGROUND COLOR LISTA=== */
-.head-conc,
-.head-conc h1,
-.head-conc h2,
-.head-conc a,
-.head-conc p {
+.fechas__info--bgcolor {
   background-color: #3b3b3b;
 }
 
-/* ===MODIFICAR FONT SIZE H1=== */
-.head-conc h1 {
-  font-size: 1.5rem;
-}
-
 /* ===AGREGAR RADIUS Y PADDING AL LIST=== */
-.head-conc {
+.fechas {
   padding: 10px;
   border-radius: 5px;
+  /* ===MODIFICAR FONT SIZE H1=== */
+  /* ===FORMATEO DEFAULT DE LAS CAJAS DE LA LISTA=== */
+  /* ===FORMATEO DEFAULT DE LAS LUGARES/FECHAS=== */
 }
-
-/* ===FORMATEO DEFAULT DE LAS CAJAS DE LA LISTA=== */
-.mcajas-1 {
+.fechas__title {
+  font-size: 1.5rem;
+}
+.fechas__cajas {
   width: 300px;
   background-color: #3b3b3b;
   margin: 5px;
   padding: 5px;
   border-top: 1px solid black;
 }
-
-/* ===FORMATEO DEFAULT DE LAS FECHAS=== */
-.mfecha {
+.fechas__lugartod {
   background-color: #3b3b3b;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  /* ===FORMATEO DEFAULT DE LOS A DE LAS FECHAS=== */
 }
-
-/* ===FORMATEO DEFAULT DE LOS A DE LAS FECHAS=== */
-.mfecha a {
+.fechas__lugartod a {
   font-size: 1rem;
   background-color: #df6400;
   padding: 0.25rem 0.5rem;
@@ -257,25 +262,32 @@ footer {
 }
 
 /* ===RESIZING Y BORDER RADIUS DEL MAPA=== */
-.mcajas iframe {
+.div__map {
   border-radius: 5px;
   max-width: 100%;
 }
 
 /* ===MUSICA=== */
+/* ===AJUSTE Y CENTRADO HEADLINE=== */
+.musica__headline {
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+}
+
 /* ===ALINEAR AL CENTRO=== */
 .album {
   text-align: center;
 }
 
 /* ===AJUSTE DE PADDING EN ALBUMS=== */
-.album .row div {
+.row__div {
   padding-bottom: 24px;
 }
 
 /* ===GALERÍA=== */
 /* ===AJUSTE DE HEALINE EN GALERIA=== */
-.headline-container .headline-bio {
+.headline__gallery {
   font-weight: bold;
   text-align: center;
   padding: 15px 0;
@@ -283,82 +295,68 @@ footer {
 
 /* ===BIOGRAFIA=== */
 /* ===ALINEAR AL CENTRO=== */
-.biografia-container {
+.bio {
   text-align: center;
   padding: 10px 15px 5px 15px;
+  /* ===ALINEAR H1 AL CENTRO=== */
+  /* ===ESCONDER H2 EN MOB=== */
+  /* ===ALINEAR COL DERECHA A LA IZQUIERDA=== */
 }
-
-/* ===ALINEAR COL DERECHA A LA IZQUIERDA=== */
-.biografia-container .row .rightcol {
+.bio__headline1 {
+  text-align: center;
+  padding-bottom: 5px;
+}
+.bio__headline2 {
+  display: none;
+}
+.bio__rightcol {
   text-align: left;
   padding-top: 20px;
 }
 
-/* ===ALINEAR H1 AL CENTRO=== */
-.biografia-container .row .col-sm-6 h1 {
-  text-align: center;
-  padding-bottom: 5px;
-}
-
-/* ===ESCONDER H2 EN MOB=== */
-.biografia-container .row .col-sm-6 h2 {
-  display: none;
-}
-
-/* ===DESKTOP VIEWPORT=== */
+/* ===BIOGRAFIA DESKTOP VIEWPORT=== */
 @media (min-width: 990px) {
-  /* ===BIOGRAFIA=== */
-  /* ===MOSTRAR H2 EN DESKTOP=== */
-  .biografia-container .row .col-sm-6 h2 {
-    display: inline-block;
-  }
-  /* ===ESCONDER H1 EN DESKTOP=== */
-  .biografia-container .row .col-sm-6 h1 {
+  .bio__headline1 {
     display: none;
+  }
+  /* ===MOSTRAR H2 EN DESKTOP=== */
+  .bio__headline2 {
+    display: inline-block;
   }
 }
 /* ===CONTACTO=== */
-/* ===MODIFICAR HOLDER DEL H1=== */
-.contacto-headline-holder {
-  text-align: center;
-}
-
 /* ===MODIFICAR H1=== */
-.contacto-headline-holder .contact-h1 {
+.contact-h1 {
+  text-align: center;
   font-size: 2em;
   font-weight: bold;
   padding: 15px 0;
 }
 
 /* ===MODIFICAR PADDING DEL CONTENEDOR DEL FORM=== */
-.form-container {
+.contactform {
   padding: 0 15px;
+  /* ===MODIFICAR PADDING ENTRE LOS INPUTS=== */
+  /* ===UNDERLINE PARA EL LINK DE VER TERMINOS Y CONDICIONES=== */
+  /* ===PADDING PARA EL CHECKBOX=== */
+  /* ===MODIFICACION DE COLORES DEL BOTÓN DE INPUT=== */
 }
-
-/* ===MODIFICAR PADDING ENTRE LOS INPUTS=== */
-.form-group {
+.contactform__group {
   padding-bottom: 15px;
 }
-
-/* ===UNDERLINE PARA EL LINK DE VER TERMINOS Y CONDICIONES=== */
-.form-tyc-underline {
+.contactform__tyc--underline {
   text-decoration: underline;
 }
-
-/* ===PADDING PARA EL CHECKBOX=== */
-.padding-checkbox {
+.contactform__checkbox--padding {
   padding-top: 5px;
   padding-bottom: 15px;
 }
-
-/* ===MODIFICACION DE COLORES DEL BOTÓN DE INPUT=== */
-.btn-color-mod {
+.contactform__btn--colormod {
   background-color: black;
   color: white;
   border: 1px solid black;
 }
-
-.btn-color-mod:hover {
+.contactform__btn--colormod:hover {
   background-color: white;
   color: black;
   border: 1px solid white;

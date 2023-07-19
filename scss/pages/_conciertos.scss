@@ -1,6 +1,6 @@
 /* ===CONCIERTOS=== */
 /* ===CONTENEDOR MAPA+LISTA=== */
-.map-container {
+.maincontainer {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -9,56 +9,52 @@
 }
 
 /* ===MODIFICAR BACKGROUND COLOR LISTA=== */
-.head-conc,
-.head-conc h1,
-.head-conc h2,
-.head-conc a,
-.head-conc p {
+.fechas__info--bgcolor {
   background-color: #3b3b3b;
-}
-
-/* ===MODIFICAR FONT SIZE H1=== */
-.head-conc h1 {
-  font-size: 1.5rem;
 }
 
 /* ===AGREGAR RADIUS Y PADDING AL LIST=== */
-.head-conc {
+.fechas {
   padding: 10px;
   border-radius: 5px;
-}
 
-/* ===FORMATEO DEFAULT DE LAS CAJAS DE LA LISTA=== */
-.mcajas-1 {
-  width: 300px;
-  background-color: #3b3b3b;
-  margin: 5px;
-  padding: 5px;
-  border-top: 1px solid black;
-}
+  /* ===MODIFICAR FONT SIZE H1=== */
+  &__title {
+    font-size: 1.5rem;
+  }
 
-/* ===FORMATEO DEFAULT DE LAS FECHAS=== */
-.mfecha {
-  background-color: #3b3b3b;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
+  /* ===FORMATEO DEFAULT DE LAS CAJAS DE LA LISTA=== */
+  &__cajas {
+    width: 300px;
+    background-color: #3b3b3b;
+    margin: 5px;
+    padding: 5px;
+    border-top: 1px solid black;
+  }
 
-/* ===FORMATEO DEFAULT DE LOS A DE LAS FECHAS=== */
-.mfecha a {
-  font-size: 1rem;
-  background-color: #df6400;
-  padding: 0.25rem 0.5rem;
-  border-radius: 30px;
-  text-transform: uppercase;
-  align-content: right;
-  font-weight: bold;
+  /* ===FORMATEO DEFAULT DE LAS LUGARES/FECHAS=== */
+  &__lugartod {
+    background-color: #3b3b3b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /* ===FORMATEO DEFAULT DE LOS A DE LAS FECHAS=== */
+    a {
+      font-size: 1rem;
+      background-color: #df6400;
+      padding: 0.25rem 0.5rem;
+      border-radius: 30px;
+      text-transform: uppercase;
+      align-content: right;
+      font-weight: bold;
+    }
+  }
 }
 
 /* ===RESIZING Y BORDER RADIUS DEL MAPA=== */
-.mcajas iframe {
+.div__map {
   border-radius: 5px;
   max-width: 100%;
 }

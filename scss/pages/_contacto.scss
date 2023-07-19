@@ -1,0 +1,40 @@
+/* ===CONTACTO=== */
+/* ===MODIFICAR H1=== */
+.contact-h1 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+/* ===MODIFICAR PADDING DEL CONTENEDOR DEL FORM=== */
+.contactform {
+  padding: 0 15px;
+
+  /* ===MODIFICAR PADDING ENTRE LOS INPUTS=== */
+  &__group {
+    padding-bottom: 15px;
+  }
+
+  /* ===UNDERLINE PARA EL LINK DE VER TERMINOS Y CONDICIONES=== */
+  &__tyc--underline {
+    text-decoration: underline;
+  }
+
+  /* ===PADDING PARA EL CHECKBOX=== */
+  &__checkbox--padding {
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+  /* ===MODIFICACION DE COLORES DEL BOTÓN DE INPUT=== */
+  &__btn--colormod {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+  }
+  &__btn--colormod:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+  }
+}
