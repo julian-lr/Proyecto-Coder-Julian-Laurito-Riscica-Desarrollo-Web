@@ -14,22 +14,30 @@
 @include keyframe-slide-up;
 @include keyframe-slide-right;
 @include keyframe-slide-down;
+@include keyframe-slide-down-mob;
 @include keyframe-slide-left;
 
 /* ===AJUSTE DE PADDING EN ALBUMS=== */
 .row__div {
   padding-bottom: 24px;
+  &--up, &--right, &--down, &--left {
+    @include animation-slide-down-mob;
+  }
+}
 
-  &--up {
-    @include animation-slide-up;
-  }
-  &--right {
-    @include animation-slide-right;
-  }
-  &--down {
-    @include animation-slide-down;
-  }
-  &--left {
-    @include animation-slide-left;
+@media (min-width: 810px) {
+  .row__div {
+    &--up {
+      @include animation-slide-up;
+    }
+    &--right {
+      @include animation-slide-right;
+    }
+    &--down {
+      @include animation-slide-down;
+    }
+    &--left {
+      @include animation-slide-left;
+    }
   }
 }

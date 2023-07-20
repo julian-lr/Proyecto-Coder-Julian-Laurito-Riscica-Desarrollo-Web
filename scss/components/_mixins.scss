@@ -67,6 +67,23 @@
   }
 }
 
+/* ===KEYFRAMES SLIDE DOWN MOBILE ONLY=== */
+@mixin keyframe-slide-down-mob {
+  @keyframes slideDownMob {
+    0% {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 100;
+    }
+  }
+}
+
 /* ===KEYFRAMES SLIDE LEFT=== */
 @mixin keyframe-slide-left {
   @keyframes slideLeft {
@@ -98,6 +115,12 @@
 @mixin animation-slide-down {
   animation: 1s ease-in 0s 1 slideDown;
 }
+
+/* ===ANIMATION SLIDE DOWN MOBILE ONLY=== */
+@mixin animation-slide-down-mob {
+  animation: 1s ease-in 0s 1 slideDownMob;
+}
+
 
 /* ===ANIMATION SLIDE LEFT=== */
 @mixin animation-slide-left {
