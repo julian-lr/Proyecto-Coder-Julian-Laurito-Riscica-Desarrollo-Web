@@ -1,16 +1,14 @@
 /* ===CONCIERTOS=== */
 /* ===CONTENEDOR MAPA+LISTA=== */
 .maincontainer {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
+  @include flex-rowrap-center;
   font-size: 0.85rem;
   padding: 15px 0;
 }
 
 /* ===MODIFICAR BACKGROUND COLOR LISTA=== */
 .fechas__info--bgcolor {
-  background-color: #3b3b3b;
+  background-color: $c-darkergrey;
 }
 
 /* ===AGREGAR RADIUS Y PADDING AL LIST=== */
@@ -26,15 +24,15 @@
   /* ===FORMATEO DEFAULT DE LAS CAJAS DE LA LISTA=== */
   &__cajas {
     width: 300px;
-    background-color: #3b3b3b;
+    background-color: $c-darkergrey;
     margin: 5px;
     padding: 5px;
-    border-top: 1px solid black;
+    border-top: 1px solid $c-black;
   }
 
   /* ===FORMATEO DEFAULT DE LAS LUGARES/FECHAS=== */
   &__lugartod {
-    background-color: #3b3b3b;
+    background-color: $c-darkergrey;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -43,7 +41,7 @@
     /* ===FORMATEO DEFAULT DE LOS A DE LAS FECHAS=== */
     a {
       font-size: 1rem;
-      background-color: #df6400;
+      background-color: $c-orange;
       padding: 0.25rem 0.5rem;
       border-radius: 30px;
       text-transform: uppercase;

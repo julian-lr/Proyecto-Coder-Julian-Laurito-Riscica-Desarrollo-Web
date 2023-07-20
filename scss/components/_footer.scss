@@ -1,8 +1,6 @@
 footer {
   padding-top: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include flex-column-center;
   padding-bottom: 20px;
 
   /* ===SECTION FOOTERS=== */
@@ -24,13 +22,13 @@ footer {
 /* ===RIGHT FOOTER - FORM=== */
 .rform__input--restyle {
   width: 200px;
-  border: 1px solid white;
+  border: 1px solid $c-white;
 }
 
 /* ===RIGHT FOOTER - BUTTON=== */
 .rform__button--restyle {
   padding: 0 5px;
-  border: 1px solid white;
+  border: 1px solid $c-white;
 }
 
 /* ===RIGHT FOOTER - COPYRIGHT AJUSTE=== */
@@ -62,16 +60,14 @@ footer {
   /* ===ELEMENTO FOOTER=== */
   footer {
     padding-top: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @include flex-row-center;
   }
 
   /* ===MIDDLE FOOTER=== */
   /* ===BORDE PARA EL FOOTER DEL MEDIO=== */
   .footer__middlefooter {
-    border-left: 1px solid #585858;
-    border-right: 1px solid #585858;
+    border-left: 1px solid $c-grey;
+    border-right: 1px solid $c-grey;
   }
 
   /* ===RIGHT FOOTER=== */

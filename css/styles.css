@@ -1,8 +1,16 @@
 @charset "UTF-8";
+/* ===KEYFRAMES SLIDE UP=== */
+/* ===KEYFRAMES SLIDE RIGHT=== */
+/* ===KEYFRAMES SLIDE DOWN=== */
+/* ===KEYFRAMES SLIDE LEFT=== */
+/* ===ANIMATION SLIDE UP=== */
+/* ===ANIMATION SLIDE RIGHT=== */
+/* ===ANIMATION SLIDE DOWN=== */
+/* ===ANIMATION SLIDE LEFT=== */
 * {
   margin: 0;
   padding: 0;
-  color: white;
+  color: #FFFFFF;
   font-family: "PT Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: #181818;
   box-sizing: border-box;
@@ -82,13 +90,13 @@ footer .footer__foothead {
 /* ===RIGHT FOOTER - FORM=== */
 .rform__input--restyle {
   width: 200px;
-  border: 1px solid white;
+  border: 1px solid #FFFFFF;
 }
 
 /* ===RIGHT FOOTER - BUTTON=== */
 .rform__button--restyle {
   padding: 0 5px;
-  border: 1px solid white;
+  border: 1px solid #FFFFFF;
 }
 
 /* ===RIGHT FOOTER - COPYRIGHT AJUSTE=== */
@@ -167,7 +175,7 @@ footer .footer__foothead {
   display: inline-block;
   background-color: transparent;
   font-family: Teko, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: black;
+  color: #000000;
   font-size: 5rem;
   font-weight: bold;
   line-height: 3.5rem;
@@ -177,7 +185,7 @@ footer .footer__foothead {
   position: relative;
   background-color: transparent;
   font-family: Teko, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: white;
+  color: #FFFFFF;
   font-size: 1.5rem;
 }
 
@@ -214,8 +222,8 @@ footer .footer__foothead {
 /* ===CONTENEDOR MAPA+LISTA=== */
 .maincontainer {
   display: flex;
-  justify-content: center;
   flex-flow: row wrap;
+  justify-content: center;
   font-size: 0.85rem;
   padding: 15px 0;
 }
@@ -241,7 +249,7 @@ footer .footer__foothead {
   background-color: #3b3b3b;
   margin: 5px;
   padding: 5px;
-  border-top: 1px solid black;
+  border-top: 1px solid #000000;
 }
 .fechas__lugartod {
   background-color: #3b3b3b;
@@ -280,9 +288,73 @@ footer .footer__foothead {
   text-align: center;
 }
 
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 100;
+  }
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 100;
+  }
+}
 /* ===AJUSTE DE PADDING EN ALBUMS=== */
 .row__div {
   padding-bottom: 24px;
+}
+.row__div--up {
+  animation: 1s ease-in 0s 1 slideUp;
+}
+.row__div--right {
+  animation: 1s ease-in 0s 1 slideRight;
+}
+.row__div--down {
+  animation: 1s ease-in 0s 1 slideDown;
+}
+.row__div--left {
+  animation: 1s ease-in 0s 1 slideLeft;
 }
 
 /* ===GALERÍA=== */
@@ -352,14 +424,14 @@ footer .footer__foothead {
   padding-bottom: 15px;
 }
 .contactform__btn--colormod {
-  background-color: black;
-  color: white;
-  border: 1px solid black;
+  background-color: #000000;
+  color: #FFFFFF;
+  border: 1px solid #000000;
 }
 .contactform__btn--colormod:hover {
-  background-color: white;
-  color: black;
-  border: 1px solid white;
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 1px solid #FFFFFF;
 }
 
 /*# sourceMappingURL=styles.css.map */

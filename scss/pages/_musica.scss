@@ -11,7 +11,25 @@
   text-align: center;
 }
 
+@include keyframe-slide-up;
+@include keyframe-slide-right;
+@include keyframe-slide-down;
+@include keyframe-slide-left;
+
 /* ===AJUSTE DE PADDING EN ALBUMS=== */
 .row__div {
   padding-bottom: 24px;
+
+  &--up {
+    @include animation-slide-up;
+  }
+  &--right {
+    @include animation-slide-right;
+  }
+  &--down {
+    @include animation-slide-down;
+  }
+  &--left {
+    @include animation-slide-left;
+  }
 }

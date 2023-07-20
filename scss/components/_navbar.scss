@@ -18,7 +18,7 @@
 
 /* ====BORDE SOLIDO PARA EL MENU COMO DIVISOR==== */
 .nav__li--borderbot {
-  border-bottom: 1px solid #585858;
+  border-bottom: 1px solid $c-grey;
 }
 
 @media (min-width: 990px) {
