@@ -394,28 +394,43 @@ footer .footer__foothead {
   text-align: center;
   padding: 10px 15px 5px 15px;
 }
+.bio__img1 {
+  display: none;
+}
+.bio__img2 {
+  width: 100%;
+  height: auto;
+}
 .bio__headline1 {
   /* ===ALINEAR H1 AL CENTRO=== */
   text-align: center;
   padding-bottom: 5px;
-}
-.bio__headline2 {
-  /* ===ESCONDER H2 EN MOB=== */
-  display: none;
 }
 .bio__rightcol {
   /* ===ALINEAR COL DERECHA A LA IZQUIERDA=== */
   text-align: left;
   padding-top: 20px;
 }
+.bio__headline2 {
+  /* ===ESCONDER H2 EN MOB=== */
+  display: none;
+}
 
 /* ===BIOGRAFIA DESKTOP VIEWPORT=== */
+@media (min-width: 576px) {
+  .bio__img1 {
+    display: inline-block;
+  }
+  .bio__img2 {
+    display: none;
+  }
+}
 @media (min-width: 990px) {
   .bio__headline1 {
     display: none;
   }
-  /* ===MOSTRAR H2 EN DESKTOP=== */
   .bio__headline2 {
+    /* ===MOSTRAR H2 EN DESKTOP=== */
     display: inline-block;
   }
 }

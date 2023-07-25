@@ -4,15 +4,18 @@
   text-align: center;
   padding: 10px 15px 5px 15px;
 
+  &__img1 {
+    display: none;
+  }
+  &__img2 {
+    width: 100%;
+    height: auto;
+  }
+
   &__headline1 {
     /* ===ALINEAR H1 AL CENTRO=== */
     text-align: center;
     padding-bottom: 5px;
-  }
-
-  &__headline2 {
-    /* ===ESCONDER H2 EN MOB=== */
-    display: none;
   }
 
   &__rightcol {
@@ -20,16 +23,33 @@
     text-align: left;
     padding-top: 20px;
   }
+
+  &__headline2 {
+    /* ===ESCONDER H2 EN MOB=== */
+    display: none;
+  }
 }
 
 /* ===BIOGRAFIA DESKTOP VIEWPORT=== */
-@media (min-width: 990px) {
-  .bio__headline1 {
-    display: none;
+@media (min-width: 576px) {
+  .bio {
+    &__img1 {
+      display:inline-block;
+    }
+    &__img2 {
+      display: none;
+    }
   }
+}
 
-  /* ===MOSTRAR H2 EN DESKTOP=== */
-  .bio__headline2 {
-    display: inline-block;
+@media (min-width: 990px) {
+  .bio {
+    &__headline1 {
+      display: none;
+    }
+    &__headline2 {
+      /* ===MOSTRAR H2 EN DESKTOP=== */
+      display: inline-block;
+    }
   }
 }
