@@ -11,23 +11,23 @@
 .contactform {
   padding: 0 15px;
 
-  /* ===MODIFICAR PADDING ENTRE LOS INPUTS=== */
   &__group {
+    /* ===MODIFICAR PADDING ENTRE LOS INPUTS=== */
     padding-bottom: 15px;
   }
 
-  /* ===UNDERLINE PARA EL LINK DE VER TERMINOS Y CONDICIONES=== */
   &__tyc--underline {
+    /* ===UNDERLINE PARA EL LINK DE VER TERMINOS Y CONDICIONES=== */
     text-decoration: underline;
   }
 
-  /* ===PADDING PARA EL CHECKBOX=== */
   &__checkbox--padding {
+    /* ===PADDING PARA EL CHECKBOX=== */
     padding-top: 5px;
     padding-bottom: 15px;
   }
-  /* ===MODIFICACION DE COLORES DEL BOTÓN DE INPUT=== */
   &__btn--colormod {
+    /* ===MODIFICACION DE COLORES DEL BOTÓN DE INPUT=== */
     background-color: $c-black;
     color: $c-white;
     border: 1px solid $c-black;

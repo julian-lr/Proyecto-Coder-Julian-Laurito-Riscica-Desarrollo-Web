@@ -4,19 +4,19 @@
   text-align: center;
   padding: 10px 15px 5px 15px;
 
-  /* ===ALINEAR H1 AL CENTRO=== */
   &__headline1 {
+    /* ===ALINEAR H1 AL CENTRO=== */
     text-align: center;
     padding-bottom: 5px;
   }
 
-  /* ===ESCONDER H2 EN MOB=== */
   &__headline2 {
+    /* ===ESCONDER H2 EN MOB=== */
     display: none;
   }
 
-  /* ===ALINEAR COL DERECHA A LA IZQUIERDA=== */
   &__rightcol {
+    /* ===ALINEAR COL DERECHA A LA IZQUIERDA=== */
     text-align: left;
     padding-top: 20px;
   }
@@ -24,14 +24,12 @@
 
 /* ===BIOGRAFIA DESKTOP VIEWPORT=== */
 @media (min-width: 990px) {
-.bio__headline1 {
+  .bio__headline1 {
     display: none;
-
   }
 
   /* ===MOSTRAR H2 EN DESKTOP=== */
   .bio__headline2 {
     display: inline-block;
-
   }
 }

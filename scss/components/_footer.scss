@@ -7,12 +7,12 @@ footer {
   .footer {
     padding: 0 20px;
 
-    /* ===SECTION FOOTERS UL - SACAR PADDING AGREGADO POR BOOTSTRAP=== */
     &__ul {
+      /* ===SECTION FOOTERS UL - SACAR PADDING AGREGADO POR BOOTSTRAP=== */
       padding-left: 0;
     }
-    /* ===BOLD PARA LOS TITULOS DE FOOTER=== */
     &__foothead {
+      /* ===BOLD PARA LOS TITULOS DE FOOTER=== */
       font-weight: bold;
     }
   }
@@ -43,11 +43,13 @@ footer {
   padding-top: 20px;
 
   &__ul {
+    /* ===REDES SOCIALES - CENTRADO DE UL=== */
     text-align: center;
     display: inline-block;
     padding: 0;
 
     .rrssul__li--adjust {
+      /* ===REDES SOCIALES - CENTRADO DE LI=== */
       display: inline-block;
       width: 20px;
       margin: 0 5px;

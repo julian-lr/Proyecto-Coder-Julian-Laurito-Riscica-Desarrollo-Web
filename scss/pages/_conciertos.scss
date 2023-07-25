@@ -16,13 +16,13 @@
   padding: 10px;
   border-radius: 5px;
 
-  /* ===MODIFICAR FONT SIZE H1=== */
   &__title {
+    /* ===MODIFICAR FONT SIZE H1=== */
     font-size: 1.5rem;
   }
 
-  /* ===FORMATEO DEFAULT DE LAS CAJAS DE LA LISTA=== */
   &__cajas {
+    /* ===FORMATEO DEFAULT DE LAS CAJAS DE LA LISTA=== */
     width: 300px;
     background-color: $c-darkergrey;
     margin: 5px;
@@ -30,16 +30,18 @@
     border-top: 1px solid $c-black;
   }
 
-  /* ===FORMATEO DEFAULT DE LAS LUGARES/FECHAS=== */
   &__lugartod {
+    /* ===FORMATEO DEFAULT DE LAS LUGARES/FECHAS=== */
+
     background-color: $c-darkergrey;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
-    /* ===FORMATEO DEFAULT DE LOS A DE LAS FECHAS=== */
     a {
+      /* ===FORMATEO DEFAULT DE LOS A DE LAS FECHAS=== */
+
       font-size: 1rem;
       background-color: $c-orange;
       padding: 0.25rem 0.5rem;

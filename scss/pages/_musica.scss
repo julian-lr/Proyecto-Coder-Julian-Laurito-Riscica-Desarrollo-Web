@@ -20,12 +20,16 @@
 /* ===AJUSTE DE PADDING EN ALBUMS=== */
 .row__div {
   padding-bottom: 24px;
-  &--up, &--right, &--down, &--left {
+  &--up,
+  &--right,
+  &--down,
+  &--left {
     @include animation-slide-down-mob;
   }
 }
 
 @media (min-width: 810px) {
+  /* ===AJUSTE DE ANIMACIONES EN DESKTOP=== */
   .row__div {
     &--up {
       @include animation-slide-up;
