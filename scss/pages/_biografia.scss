@@ -31,7 +31,9 @@
 }
 
 /* ===BIOGRAFIA DESKTOP VIEWPORT=== */
-@media (min-width: 576px) {
+
+
+@media (min-width: 992px) {
   .bio {
     &__img1 {
       display:inline-block;
@@ -39,17 +41,17 @@
     &__img2 {
       display: none;
     }
-  }
-}
-
-@media (min-width: 990px) {
-  .bio {
     &__headline1 {
       display: none;
     }
     &__headline2 {
       /* ===MOSTRAR H2 EN DESKTOP=== */
       display: inline-block;
+    }
+    &__rightcol {
+      /* ===ALINEAR COL DERECHA A LA IZQUIERDA=== */
+      text-align: left;
+      padding-top: 0px;
     }
   }
 }

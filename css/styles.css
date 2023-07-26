@@ -417,21 +417,24 @@ footer .footer__foothead {
 }
 
 /* ===BIOGRAFIA DESKTOP VIEWPORT=== */
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .bio__img1 {
     display: inline-block;
   }
   .bio__img2 {
     display: none;
   }
-}
-@media (min-width: 990px) {
   .bio__headline1 {
     display: none;
   }
   .bio__headline2 {
     /* ===MOSTRAR H2 EN DESKTOP=== */
     display: inline-block;
+  }
+  .bio__rightcol {
+    /* ===ALINEAR COL DERECHA A LA IZQUIERDA=== */
+    text-align: left;
+    padding-top: 0px;
   }
 }
 /* ===CONTACTO=== */
@@ -451,6 +454,10 @@ footer .footer__foothead {
   /* ===MODIFICAR PADDING ENTRE LOS INPUTS=== */
   padding-bottom: 15px;
 }
+.contactform__group input,
+.contactform__group select {
+  font-family: Tako, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 .contactform__tyc--underline {
   /* ===UNDERLINE PARA EL LINK DE VER TERMINOS Y CONDICIONES=== */
   text-decoration: underline;
@@ -460,11 +467,15 @@ footer .footer__foothead {
   padding-top: 5px;
   padding-bottom: 15px;
 }
+.contactform textarea.form-control {
+  font-family: Tako, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 .contactform__btn--colormod {
   /* ===MODIFICACION DE COLORES DEL BOTÓN DE INPUT=== */
   background-color: #000000;
   color: #ffffff;
   border: 1px solid #000000;
+  font-family: Tako, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .contactform__btn--colormod:hover {
   background-color: #ffffff;
